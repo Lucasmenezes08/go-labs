@@ -8,7 +8,10 @@ import (
 const prefixoOla = "Olá, "
 
 func Ola (nome string) string {
-	return  prefixoOla + nome
+	if nome == ""{
+		nome = "Mundo"
+	}
+	return prefixoOla + nome
 }
 
 

@@ -1,20 +1,18 @@
 package helloworld
 
-
 import (
 	"fmt"
 )
 
 const prefixoOla = "Olá, "
 
-func Ola (nome string) string {
-	if nome == ""{
+func Ola(nome string) string {
+	if nome == "" {
 		nome = "Mundo"
 	}
 	return prefixoOla + nome
 }
 
-
-func main (){
+func main() {
 	fmt.Println(Ola("Lucas"))
 }

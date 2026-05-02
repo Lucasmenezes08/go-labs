@@ -1,10 +1,8 @@
 package iteration
 
-
 import "testing"
 
-
-func TestRepeat (t *testing.T){
+func TestRepeat(t *testing.T) {
 	result := Repeat("a", 5)
 	esperado := "aaaaa"
 

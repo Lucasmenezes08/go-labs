@@ -2,8 +2,7 @@ package structs
 
 import "math"
 
-
-type Forma interface{
+type Forma interface {
 	Area() float64
 }
 
@@ -25,11 +24,11 @@ func (c Circulo) Area() float64 {
 }
 
 type Triangulo struct {
-	Base float64
+	Base   float64
 	Altura float64
-} 
+}
 
-func (t Triangulo)Area() float64{
+func (t Triangulo) Area() float64 {
 	return (t.Base * t.Altura) * 0.5
 }
 

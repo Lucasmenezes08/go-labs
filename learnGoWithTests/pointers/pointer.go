@@ -23,11 +23,11 @@ func (c *Carteira) Saldo() Bitcoin {
 	return c.saldo
 }
 
-func (c * Carteira)Retirar(valor Bitcoin) error{
+func (c *Carteira) Retirar(valor Bitcoin) error {
 	if c.saldo < valor {
 		return errors.New("Saldo insuficiente")
 	}
-	
+
 	c.saldo -= valor
 	return nil
 }

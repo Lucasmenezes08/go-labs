@@ -5,16 +5,14 @@ import (
 	"testing"
 )
 
-
-func TestTwoSum (t *testing.T){
-	nums := []int{2,7,11,15}
+func TestTwoSum(t *testing.T) {
+	nums := []int{2, 7, 11, 15}
 	target := 9
 
-	result := twoSum(nums,target)
-	expected := []int{0,1}
+	result := twoSum(nums, target)
+	expected := []int{0, 1}
 
-	if !reflect.DeepEqual(result , expected) {
-		t.Errorf("esperado %v , resultado %v , dado %v", expected , result , nums)
+	if !reflect.DeepEqual(result, expected) {
+		t.Errorf("esperado %v , resultado %v , dado %v", expected, result, nums)
 	}
 }
- 

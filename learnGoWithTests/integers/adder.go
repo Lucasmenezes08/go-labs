@@ -1,7 +1,5 @@
 package integers
 
-
-func Adder (x , y int) int{
+func Adder(x, y int) int {
 	return x + y
 }
-
